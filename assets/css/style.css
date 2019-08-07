@@ -1,0 +1,10 @@
+.navbar-nav {
+    text-align: right;
+}
+
+.nav-item a {
+    text-transform: uppercase;
+}
+
+.carousel-control-next, .carousel-control-prev {
+}
