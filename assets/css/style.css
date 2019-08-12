@@ -1,10 +1,154 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-container {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.block-divider {
+    width: 35px;
+    height: 5px;
+    border: 0;
+    background-color: #e0820e;
+}
+
+.button-postion {
+    text-align: center;
+}
+
+/*-------------------------------Page Titles*/
+
+.page-title {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-title h2 {
+    margin-top: 0;
+}
+
+/*-------------------------------Navbar*/
+
 .navbar-nav {
     text-align: right;
 }
 
 .nav-item a {
     text-transform: uppercase;
+    font-size: 25px;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.nav-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.navbar button:focus {
+    outline-color: pink;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+
+.navbar-toggler-icon {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+
+/*-------------------------------Jumbotron*/
+
+.heading-container {
+    height: 100vh;
+
+    background: url(../images/hill-lauryn-540.jpg) no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron-heading {
+    color: #FFBB06;
+    font-weight: ;
+    font-size: 60px;
+}
+
+
+/*-------------------------------About*/
+
+.about-container {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: left;
+    margin-bottom: 40px;
+
+    /*background-image: url(../images/hill-lauryn-506.jpg);
+    background-position: center;
+    background-size: cover;*/
+
+    width: 100vw;
+
+}
+
+/*-------------------------------Tour*/
+
+.tour-container table {
+    margin-left: 25px;
+    margin-top: 16px;
+}
+
+.musicvideo-container {
+    
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50px;
+    bottom: 50px;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: relative;
+    display: block;
+    font-weight: 200
 }
