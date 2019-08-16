@@ -11,11 +11,19 @@ body {
     width: 35px;
     height: 5px;
     border: 0;
-    background-color: #e0820e;
+    background-color: #bf9232;
 }
 
 .button-postion {
     text-align: center;
+}
+
+.first-album{
+    background-image: url(../images/the-miseducation-of-lauryn-hill.jpg);
+}
+
+.second-album {
+    background-image: url(../images/mtv-unplugged-no-20.jpg);
 }
 
 /*-------------------------------Page Titles*/
@@ -51,6 +59,7 @@ body {
 }
 
 .navbar {
+    position: fixed;
     margin-bottom: 0;
     border: 0;
     width: 100%;
@@ -120,12 +129,14 @@ body {
     padding-right: 15%;
     text-align: left;
     margin-bottom: 40px;
+    
+    background-color: rgba(70, 50, 13, 0.5);
 
     /*background-image: url(../images/hill-lauryn-506.jpg);
     background-position: center;
     background-size: cover;*/
 
-    width: 100vw;
+    /*width: 100vw;*/
 
 }
 
@@ -136,9 +147,40 @@ body {
     margin-top: 16px;
 }
 
+/*-------------------------------Music & Videos*/
+
 .musicvideo-container {
-    
+    background-color: rgba(70, 50, 13, 0.5);
 }
+
+.album-container {
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+}
+
+.logo-wrapper {
+    padding-top: 40%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+.video-container {
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+/*@media (min-width: 768px) {
+    .logo-container-height {
+        height: 100px;
+    }
+}*/
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -146,9 +188,3 @@ body {
     bottom: 50px;
 }
 
-.timeline-item:before {
-    content: attr(data-dates);
-    position: relative;
-    display: block;
-    font-weight: 200
-}
