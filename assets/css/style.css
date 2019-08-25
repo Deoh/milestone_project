@@ -1,5 +1,8 @@
+/*----------------------------------------Special paddings/ margins/ text */
+
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 .content-container {
@@ -7,16 +10,66 @@ body {
     padding-bottom: 55px;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.center {
+    text-align: center;
+}
+
+
 .block-divider {
     width: 35px;
     height: 5px;
     border: 0;
+    background-color: pink;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*----------------------------------------Color */
+
+.white-text {
+    color: white;
+}
+
+.block-divider-color {
     background-color: #bf9232;
 }
 
-.button-postion {
-    text-align: center;
+.navbar button:focus {
+    outline-color: #bf9232;
+    border-radius: 8px;
 }
+
+
+/*.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,.75);
+}*/
+
+
+.navbar-toggler-icon:hover {
+    background-color: rgba(191, 146, 50, 0.5);
+}
+
+.name-color-theme {
+    color: rgba(191, 146, 50, 0.5);
+}
+
+.bct2 {
+    background-color: black;
+}
+
+.background-color-theme {
+    background-color: rgba(70, 50, 13, 0.5);
+}
+
+
+
+/*----------------------------------------Album cover art*/
 
 .first-album{
     background-image: url(../images/the-miseducation-of-lauryn-hill.jpg);
@@ -24,18 +77,6 @@ body {
 
 .second-album {
     background-image: url(../images/mtv-unplugged-no-20.jpg);
-}
-
-/*-------------------------------Page Titles*/
-
-.page-title {
-    margin-bottom: 0;
-    border-bottom: 0;
-    text-align: center;
-}
-
-.page-title h2 {
-    margin-top: 0;
 }
 
 /*-------------------------------Navbar*/
@@ -66,16 +107,13 @@ body {
     background-color: transparent;
 }
 
-.navbar button:focus {
-    outline-color: pink;
-}
-
 .navbar-toggler {
     border: 0;
 }
 
 
 .navbar-toggler-icon {
+    border-radius: 8px;
     width: 2.5em;
     height: 2.5em;
 }
@@ -87,7 +125,8 @@ body {
 /*-------------------------------Jumbotron*/
 
 .heading-container {
-    height: 100vh;
+    padding: 0;
+    height: 90vh;
 
     background: url(../images/hill-lauryn-540.jpg) no-repeat top center fixed;
     -webkit-background-size: cover;
@@ -103,7 +142,7 @@ body {
 }
 
 .opaque-overlay {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     height: 100%;
@@ -115,35 +154,56 @@ body {
     background-color: transparent;
 }
 
-.jumbotron-heading {
-    color: #FFBB06;
-    font-weight: ;
-    font-size: 60px;
+.title-font {
+    font-size: 3.5em;
+    margin-top: 3em;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .title-font {
+        font-size: 7em;
+    }
 }
 
 
+    
 /*-------------------------------About*/
 
 .about-container {
     padding-left: 15%;
     padding-right: 15%;
     text-align: left;
-    margin-bottom: 40px;
     
-    background-color: rgba(70, 50, 13, 0.5);
 
     /*background-image: url(../images/hill-lauryn-506.jpg);
     background-position: center;
-    background-size: cover;*/
+    background-size: cover;
 
     /*width: 100vw;*/
 
 }
 
+.about-text p span {
+    color: blue;
+}
+
+.about-wrapper {
+    /*background-image: url(../images/hill-lauryn-506.jpg);
+    background-position: center;
+    background-size: cover;*/
+    
+    background: url(../images/hill-lauryn-506.jpg) no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 /*-------------------------------Tour*/
 
 .tour-container table {
-    margin-left: 25px;
     margin-top: 16px;
 }
 
@@ -158,29 +218,43 @@ body {
     background-size: cover;
     border-radius: 8px;
     
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     margin: 15px auto;
 }
 
-.logo-wrapper {
-    padding-top: 40%;
-    padding-left: 10%;
-    padding-right: 10%;
+@media (min-width: 992px) {
+    .album-container {
+        width: 350px;
+        height: 350px;    
+        
+    }
+}
+
+.music-link {
+    padding: 5%;
     text-align: center;
 }
 
-.video-container {
-    padding-left: 10px;
-    padding-right: 20px;
-    border-radius: 20px;
+.music-link img {
+    height: 52px;
 }
 
-/*@media (min-width: 768px) {
-    .logo-container-height {
-        height: 100px;
+@media (min-width: 992px) {
+    .music-link img{
+        height: 62px;
     }
-}*/
+}
+
+.video-container {
+    margin: 12px 0;
+}
+
+@media (min-width: 768px) {
+    .video-container {
+        margin: 12px 36px;
+    }
+}
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -188,3 +262,55 @@ body {
     bottom: 50px;
 }
 
+/*-------------------------------Contact*/
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.contact-container input {
+    margin-bottom: 15px;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #bf9232;
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(191,146,50,0.7);
+}
+
+/*-------------------------------footer*/
+
+#footer {
+    padding: 25px;
+}
+
+footer {
+    min-height: 120px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #e84610;
+}
