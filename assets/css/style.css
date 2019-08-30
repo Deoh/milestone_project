@@ -45,12 +45,6 @@ a:hover {
     border-radius: 8px;
 }
 
-
-/*.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgba(255,255,255,.75);
-}*/
-
-
 .navbar-toggler-icon:hover {
     background-color: rgba(191, 146, 50, 0.5);
 }
@@ -67,6 +61,33 @@ a:hover {
     background-color: rgba(70, 50, 13, 0.5);
 }
 
+.btn-outline-info {
+    color: white;
+    border-color: #bf9232;
+}
+    
+.btn-outline-info:hover {
+    background-color: #bf9232;
+    border-color: #bf9232;
+}
+
+.btn-outline-info:click  {
+    background-color: #bf9232b3;
+    border-color: #bf9232b3;
+    
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+}
+
+.btn-primary:hover {
+    color: black;
+    background-color: #bf9232;
+    border-color: #bf9232;
+}
 
 
 /*----------------------------------------Album cover art*/
@@ -174,14 +195,6 @@ a:hover {
     padding-left: 15%;
     padding-right: 15%;
     text-align: left;
-    
-
-    /*background-image: url(../images/hill-lauryn-506.jpg);
-    background-position: center;
-    background-size: cover;
-
-    /*width: 100vw;*/
-
 }
 
 .about-text p span {
@@ -202,6 +215,10 @@ a:hover {
 
 
 /*-------------------------------Tour*/
+
+.tour-container {
+    text-align: center;
+}
 
 .tour-container table {
     margin-top: 16px;
@@ -225,8 +242,8 @@ a:hover {
 
 @media (min-width: 992px) {
     .album-container {
-        width: 350px;
-        height: 350px;    
+        width: 450px;
+        height: 450px;    
         
     }
 }
@@ -245,6 +262,39 @@ a:hover {
         height: 62px;
     }
 }
+
+.social-links-mv li a i {
+    margin: 0 20px;
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: black;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links-mv li a i:hover {
+    color: black;
+    background: rgba(191,146,50,0.7);
+}
+
+@media (min-width: 992px) {
+    .social-links-mv li a i {
+        width: 62px;
+        height: 62px;
+        padding: 24px 0;
+        font-size: 26px;
+        line-height: 14px;
+    }
+}
+
 
 .video-container {
     margin: 12px 0;
@@ -312,5 +362,5 @@ footer {
 }
 
 .social-links li a i:hover {
-    background: #e84610;
+    background: rgba(191,146,50,0.7);
 }
