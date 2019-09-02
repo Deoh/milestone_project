@@ -183,7 +183,8 @@ a:hover {
 
 @media (min-width: 768px) {
     .title-font {
-        font-size: 7em;
+        font-size: 84px;
+        margin-top: 100px;
     }
 }
 
