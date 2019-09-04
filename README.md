@@ -41,7 +41,7 @@ features include:
 The website navigation bar when clicked drops down with links to different section of the website, clicking these links should take you to the intended section of the page (the **ABOUT** icon should link to another html page). 
 scrolling down the page should have the same effect.
 
-The website should scale well from mobile to desktops, in particular with regards to the webiste heading, "about" text, album art and music video sizing.
+The website should scale well from mobile to desktops, in particular with regards to the website heading, "about" text, album art and music video sizing.
 
 The website should work similarly across different browsers and screen sizes.
 
