@@ -1,6 +1,6 @@
 # Milestone project (Lauryn Hill website)
 
-This website is built for the musician singer/songwritre Lauryn Hill
+This website is built for the musician singer/songwriter Lauryn Hill
 
 ## UX
 
